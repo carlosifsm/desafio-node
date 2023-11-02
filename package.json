@@ -2,7 +2,7 @@
   "name": "desafio_node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon src/app.js"
   },
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "knex": "^3.0.1"
+    "knex": "^3.0.1",
+    "mysql2": "^3.6.2"
   }
 }
