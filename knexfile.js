@@ -7,7 +7,7 @@ module.exports = {
     connection: {
       database:"lista_de_compras",
       user: "root",
-      password: ""
+      password: "MY$2003#sql"
     },
     migrations: {
       tableName: 'migrations',
