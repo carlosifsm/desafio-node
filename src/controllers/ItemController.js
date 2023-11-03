@@ -8,11 +8,11 @@ module.exports = {
     },
     async create(req, res, next) {
         try {
-            const { nome, validade } = req.body
+            const { nome, qtd } = req.body
 
             await knex('item').insert({
                 nome,
-                validade
+                qtd
             })
 
             return res.status(201).send()
@@ -23,13 +23,13 @@ module.exports = {
     async update(req, res, next) {
         try {
             const { nome } = req.body
-            const { validade } = req.body
+            const { qtd } = req.body
             const { id } = req.params
             
             
             await knex('item')
             .update({ nome })
-            .update({ validade })
+            .update({ qtd })
             .where({ id })
 
             return res.send()
